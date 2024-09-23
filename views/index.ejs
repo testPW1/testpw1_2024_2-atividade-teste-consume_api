@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+  <title>Bitcoin info</title>
+  <style>
+    table, body {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    </style>
+</head>
+
+<body>
+  <h1 style='color: black'>Bitcoin Data</h>
+  <hr>
+  <table>
+    <thead>
+      <tr>
+        <th>USD</th>
+        <th>GBP</th>
+        <th>EUR</th>
+      </tr>
+    </thead>
+    <tr>
+      <td><%= b.bpi.USD.rate%></td>
+      <td><%= b.bpi.GBP.rate%></td>
+      <td><%= b.bpi.EUR.rate%></td>
+    </tr>
+  </table>
+  <p style='font-size: small;'>Em <%= b.time.updated%></p>
+</body>
+</html>
